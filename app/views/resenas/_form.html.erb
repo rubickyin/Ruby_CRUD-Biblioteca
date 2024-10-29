@@ -1,0 +1,42 @@
+<%= form_with(model: reseña) do |form| %>
+  <% if reseña.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(reseña.errors.count, "error") %> prohibited this reseña from being saved:</h2>
+
+      <ul>
+        <% reseña.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :libro_id, style: "display: block" %>
+    <%= form.text_field :libro_id %>
+  </div>
+
+  <div>
+    <%= form.label :usuario_id, style: "display: block" %>
+    <%= form.text_field :usuario_id %>
+  </div>
+
+  <div>
+    <%= form.label :calificacion, style: "display: block" %>
+    <%= form.number_field :calificacion %>
+  </div>
+
+  <div>
+    <%= form.label :comentario, style: "display: block" %>
+    <%= form.text_area :comentario %>
+  </div>
+
+  <div>
+    <%= form.label :fecha, style: "display: block" %>
+    <%= form.date_field :fecha %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

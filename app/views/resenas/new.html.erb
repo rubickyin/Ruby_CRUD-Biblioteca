@@ -1,0 +1,11 @@
+<% content_for :title, "New reseña" %>
+
+<h1>New reseña</h1>
+
+<%= render "form", reseña: @resena %>
+
+<br>
+
+<div>
+  <%= link_to "Back to reseñas", resenas_path %>
+</div>

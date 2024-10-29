@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<% content_for :title, "Reseñas" %>
+
+<h1>Reseñas</h1>
+
+<div id="resenas">
+  <% @resenas.each do |resena| %>
+    <%= render resena %>
+    <p>
+      <%= link_to "Show this resena", resena %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New resena", new_resena_path %>
