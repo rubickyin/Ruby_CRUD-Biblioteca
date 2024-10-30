@@ -1,0 +1,41 @@
+.usuario-info-container {
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #007bff;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
+    color: #333;
+}
+
+.usuario-info-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.usuario-info-table th,
+.usuario-info-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.usuario-info-table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+.usuario-info-table td {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.usuario-info-table tr td:first-child {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.usuario-info-table tr:not(:last-child) td {
+    border-bottom: 1px solid #ccc;
+}

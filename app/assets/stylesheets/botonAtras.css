@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.back-button-container {
+    font-family: 'Montserrat';
+    position: absolute; /* Permite posicionar el botón */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde el lado derecho */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+}
+
+.btn-back {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interno del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición suave para hover */
+}
+
+.btn-back:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
